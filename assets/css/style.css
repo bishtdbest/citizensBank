@@ -1,0 +1,173 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  body{ font-size: 16px; color: #888888; font-family: Arial, Helvetica, sans-serif;}
+  .wrapper{max-width: 1280px; margin: 0 auto;}
+
+/* global Css */
+  .container{max-width: 1244px; padding-left: 20px; padding-right: 20px; margin: 0 auto;}
+  a{text-decoration: none; color: #759b24;}
+  p{line-height: 1.7; margin-bottom: 20px;}
+  h1, h2, h3, h4, h5, h6 {
+    color: #00945f;
+    font-weight: normal;
+  }
+  h2{font-size: 26px; position: relative; padding-bottom: 14px; margin-bottom: 20px;}
+  h2::after{content: ""; position: absolute; width: 73px; height: 2px; background-color: #00945f; top: 100%; left: 50%; transform: translateX(-50%);}
+  h3{font-size: 20px; margin-bottom: 8px;}
+  .btnLink{ display: inline-block; background-color: #e97300; font-size: 21px; color: white; padding: 4px 20px;}
+  .textLink{position: relative; color: #759b24; display: inline-block; padding-right: 10px;}
+  .textLink::after{content: ""; border: solid 1px #759b24; border-bottom-color: transparent; border-left-color: transparent; width: 10px; height: 10px; position: absolute; right: 0; top: 50%; transform: translateY(-50%) rotate(45deg);}
+  
+  /* header */
+  .header{padding: 64px 0 46px;}
+  .header .logo{display: inline-block;}
+
+  .middleContainer{padding-bottom: 131px;}
+
+  /* banner */
+  .bannerWrapper {margin-bottom: 37px;}
+  .bannerWrapper .banner{position: relative; overflow: hidden;}
+  .bannerWrapper .bannerImg{ width: 100%; display: block; }
+  .bannerWrapper .bannerOverlay{ position: absolute; z-index: 1; left: 53%; top: 0; transform: skew(-14deg); height: 100%; width: 55%; background: #005944; opacity: 80%;}
+
+  /* investment */
+  .investmentWrapper{ text-align: center; padding-top: 20px; margin-bottom: 18px;}
+  .investmentWrapper p{text-align: left; margin-bottom: 37px; line-height: 2; }
+
+  /* advantage */
+  .advantageWrapper{ padding-top: 20px; margin-bottom: 16px; overflow: hidden;}
+  .advantageWrapper h2{text-align: center;}
+
+  .advantageRow{padding-top: 20px; display: flex; position: relative; margin-bottom: 85px;}
+  .advantageRow::after{content: ""; position: absolute; width: 1px; height: 80%; background: #c0c0c0; left: 50%; top: 27px;}
+  .advantageRow:last-child{margin-bottom: 40px;}
+  
+  .advantageItem { width: 50%; }
+  .advantageItem p{ line-height: 1.9; margin-bottom: 0;}
+  .advantageItem:first-child{padding-right: 36px;}
+  .advantageItem:last-child{padding-left: 42px;}
+
+  /* loanWrapper */
+  .loanWrapper{margin-bottom: 61px;}
+  .loanHeading{background-color: #00945f;}
+  .loanHeading h2{color: white; padding: 16px 0 10px; margin: 0; text-align: center; font-size: 20px;}
+  .loanHeading h2::after{display: none;}
+
+  .loanContent{padding: 25px 64px 10px; background-color: #ebf7f5; text-align: left;}
+  .loanContent p{line-height: 1.9;}
+
+  /* testimonial */
+  .testimonialList{display: flex;}
+  .testimonialItem{width: 27%; text-align: center;}
+  .centerItem{ width: 46%;}
+
+  .testimonialItem img{display: inline-block;}
+  .testimonialItem .testimonial{max-width: 60%; display: block; margin: 0 auto; background: url(../images/quoteIcon.webp) no-repeat;}
+  .testimonialItem q{line-height: 1.8; font-style: italic; margin-bottom: 12px; display: block;}
+  .clientDetails span{ color: #00945f; display: block; font-size: 15px; line-height: 1.8;}
+
+  .testimonialItem.centerItem .testimonial{max-width: 70%;}
+
+  /* footer */
+  .footer{border-top: solid 1px #00945f; padding: 37px 0;}
+  .SocialLinkslist{display: flex; margin-bottom: 24px;}
+  .SocialLinkslist > a{margin-right: 8px;}
+
+  .footer p, .footerLinks{font-size: 11px; line-height: 1.2;}
+  .footer p{color: #666666;}
+  .footer p a{ text-decoration: underline; color: #666666;}
+  .footer p a:hover{text-decoration: none;}
+  .footerLinks, .footerLinks a{color: #000000;}
+  .footerLinks a:hover{text-decoration: underline;}
+
+@media (max-width: 767.8px) {
+  h2{padding-bottom: 14px; line-height: 1.2; margin-bottom: 12px; }
+
+  .middleContainer { padding-bottom: 34px;}
+
+  .container{ max-width: 320px; padding-left: 20px;  padding-right: 20px; }
+  .header { padding: 24px 0 17px; text-align: center; }
+  .header .logo { display: inline-block; max-width: 174px; }
+
+  .bannerWrapper .bannerImg{min-height: 201px; object-fit: cover; object-position: left;}
+  .bannerWrapper .bannerOverlay{display: none;}
+  .investmentWrapper{padding-top: 0;margin-bottom: 27px;}
+
+  .investmentWrapper p{line-height: 1.95; margin-bottom: 41px;}
+
+  .advantageWrapper{ margin-bottom: 6px;}
+  .advantageRow{display: block; padding-top: 13px; margin-bottom: 0;}
+  .advantageRow::after{display: none;}
+  .advantageRow:last-child{padding-top: 0; margin-bottom: 0;}
+  .advantageItem{width: 100%; margin-bottom: 16px;
+    padding-bottom: 22px;
+    border-bottom: solid 1px #c2c2c2;}
+  .advantageItem:first-child{padding-right: 0;}
+  .advantageItem:last-child{padding-left: 0;padding-bottom: 18px; }
+  .advantageItem p{font-size: 15.5px; line-height: 2;}
+
+  .advantageRow:last-child .advantageItem:first-child{ padding-bottom: 13px;}
+  .advantageRow:last-child .advantageItem:last-child{padding-bottom: 10px;}
+
+  .loanWrapper { margin-bottom: 30px;}
+  .loanContent{ padding: 15px 7px 8px;}
+  .loanHeading h2{ padding: 16px 0 10px;font-size: 20px; line-height: 1.5;}
+  .loanContent p{font-size: 15.5px; line-height: 2; margin-bottom: 0;}
+
+  .testimonialList{display: block;}
+  .testimonialList .testimonialItem{width: 100%; margin-bottom: 30px;}
+
+  .footer {padding: 26px 0;}
+ }
+
+ @media (min-width: 768px) and (max-width: 1199.8px) {
+  .testimonialWrapper .testimonialList .testimonialItem{width: 33%;}
+  .testimonialItem.centerItem .testimonial{max-width: 100%;}
+  .testimonialItem .testimonial{max-width: 80%;}
+ }
