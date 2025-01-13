@@ -46,7 +46,7 @@
     isolation: isolate;
   }
 
-  body{ font-size: 16px; color: #888888; font-family: Arial, Helvetica, sans-serif;}
+  body{ font-size: 16px; color: #292929; font-family: Arial, Helvetica, sans-serif;}
   .wrapper{max-width: 1280px; margin: 0 auto;}
 
 /* global Css */
@@ -54,11 +54,11 @@
   a{text-decoration: none; color: #759b24;}
   p{line-height: 1.7; margin-bottom: 20px;}
   h1, h2, h3, h4, h5, h6 {
-    color: #00945f;
+    color: #017d51;
     font-weight: normal;
   }
   h2{font-size: 26px; position: relative; padding-bottom: 14px; margin-bottom: 20px;}
-  h2::after{content: ""; position: absolute; width: 73px; height: 2px; background-color: #00945f; top: 100%; left: 50%; transform: translateX(-50%);}
+  h2::after{content: ""; position: absolute; width: 73px; height: 2px; background-color: #017d51; top: 100%; left: 50%; transform: translateX(-50%);}
   h3{font-size: 20px; margin-bottom: 8px;}
   .btnLink{ display: inline-block; background-color: #e97300; font-size: 21px; color: white; padding: 4px 20px;}
   .textLink{position: relative; color: #759b24; display: inline-block; padding-right: 10px;}
@@ -95,7 +95,7 @@
 
   /* loanWrapper */
   .loanWrapper{margin-bottom: 61px;}
-  .loanHeading{background-color: #00945f;}
+  .loanHeading{background-color: #017d51;}
   .loanHeading h2{color: white; padding: 16px 0 10px; margin: 0; text-align: center; font-size: 20px;}
   .loanHeading h2::after{display: none;}
 
@@ -110,18 +110,18 @@
   .testimonialItem img{display: inline-block;}
   .testimonialItem .testimonial{max-width: 60%; display: block; margin: 0 auto; background: url(../images/quoteIcon.webp) no-repeat;}
   .testimonialItem q{line-height: 1.8; font-style: italic; margin-bottom: 12px; display: block;}
-  .clientDetails span{ color: #00945f; display: block; font-size: 15px; line-height: 1.8;}
+  .clientDetails span{ color: #017d51; display: block; font-size: 15px; line-height: 1.8;}
 
   .testimonialItem.centerItem .testimonial{max-width: 70%;}
 
   /* footer */
-  .footer{border-top: solid 1px #00945f; padding: 37px 0;}
+  .footer{border-top: solid 1px #017d51; padding: 37px 0;}
   .SocialLinkslist{display: flex; margin-bottom: 24px;}
   .SocialLinkslist > a{margin-right: 8px;}
 
   .footer p, .footerLinks{font-size: 11px; line-height: 1.2;}
-  .footer p{color: #666666;}
-  .footer p a{ text-decoration: underline; color: #666666;}
+  .footer p{color: #292929;}
+  .footer p a{ text-decoration: underline; color: #292929;}
   .footer p a:hover{text-decoration: none;}
   .footerLinks, .footerLinks a{color: #000000;}
   .footerLinks a:hover{text-decoration: underline;}
